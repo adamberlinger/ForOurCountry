@@ -1,0 +1,8 @@
+.DS_Store
+/Temp
+/obj
+/Library
+*.csproj
+*.unityproj
+*.sln
+Assets/TK2DROOT
