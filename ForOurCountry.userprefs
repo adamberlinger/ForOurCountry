@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EndController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hydrogen Framework/Hydrogen/Plugins/Hydrogen.Plugins/TestFlight.cs">
     <Files>
-      <File FileName="Assets\Scripts\LanguageController.cs" Line="38" Column="31" />
-      <File FileName="Assets\Scripts\MenuController.cs" Line="81" Column="135" />
-      <File FileName="Assets\Scripts\EndController.cs" Line="15" Column="3" />
+      <File FileName="Assets/Hydrogen Framework/Hydrogen/Plugins/Hydrogen.Plugins/TestFlight.cs" Line="56" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
