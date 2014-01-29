@@ -197,7 +197,8 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: 
     2: 
-    7: 
+    4: HYDROGEN_TESTFLIGHT
+    7: HYDROGEN_TESTFLIGHT
   metroPackageName: gamejam
   metroPackageLogo: 
   metroPackageVersion: 
