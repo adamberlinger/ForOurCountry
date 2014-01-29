@@ -25047,6 +25047,7 @@ GameObject:
   - 33: {fileID: 1992380852}
   - 64: {fileID: 1992380851}
   - 23: {fileID: 1992380850}
+  - 114: {fileID: 1992380854}
   m_Layer: 0
   m_Name: WhiteBack
   m_TagString: Untagged
@@ -25108,6 +25109,17 @@ Transform:
   - {fileID: 245195040}
   - {fileID: 1021463203}
   m_Father: {fileID: 0}
+--- !u!114 &1992380854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992380849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3130131e9ed4e9244a2fc482858df6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1997813637
 Prefab:
   m_ObjectHideFlags: 0

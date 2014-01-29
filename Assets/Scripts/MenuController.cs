@@ -40,8 +40,7 @@ public class MenuController : MonoBehaviour {
 
 	public GameObject logo;
 
-	public GameObject czSwitch;
-	public GameObject enSwitch;
+	public GameObject langSwitch;
 
 	// Use this for initialization
 	void Start () {
@@ -53,8 +52,7 @@ public class MenuController : MonoBehaviour {
 		StartCoroutine(FadeInText (introText2, 1f));
 		StartCoroutine(FadeInText (introText3, 1.5f));
 		StartCoroutine(FadeInText (introText4, 2f));
-		StartCoroutine(FadeInText (czSwitch, 2f));
-		StartCoroutine(FadeInText (enSwitch, 2f));
+		StartCoroutine(FadeInText (langSwitch, 2f));
 		StartCoroutine(FadeInSpriteTk2D (logo));
 	}
 
@@ -129,6 +127,15 @@ public class MenuController : MonoBehaviour {
 		}
 	}
 
+	public void languageToggle(){
+		if(GameObject.Find ("LanguageController").GetComponent<LanguageController>().getLanguage() == LanguageController.Language.CZ){
+			setEN();
+		}
+		else {
+			setCZ();
+		}
+	}
+
 	public void setCZ(){
 		GameObject.Find ("LanguageController").GetComponent<LanguageController>().setLanguage(LanguageController.Language.CZ);
 
@@ -141,6 +148,8 @@ public class MenuController : MonoBehaviour {
 		textButtonBlack.GetComponent<tk2dTextMesh> ().text = "OK,\nbílý se nedívá";
 		textBigBlack.GetComponent<SpriteRenderer> ().sprite = spriteBigBlackCz;
 		textBigWhite.GetComponent<SpriteRenderer> ().sprite = spriteBigWhiteCz;
+
+		GameObject.Find("langSwitch").GetComponent<tk2dTextMesh>().text = "Switch to english";
 
 	}
 	public void setEN(){
@@ -156,9 +165,7 @@ public class MenuController : MonoBehaviour {
 		textBigBlack.GetComponent<SpriteRenderer> ().sprite = spriteBigBlackEn;
 		textBigWhite.GetComponent<SpriteRenderer> ().sprite = spriteBigWhiteEn;
 
-
-
-
+		GameObject.Find("langSwitch").GetComponent<tk2dTextMesh>().text = "Přepnout do češtiny";
 	}
 
 

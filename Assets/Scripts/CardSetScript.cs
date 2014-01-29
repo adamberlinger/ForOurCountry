@@ -51,17 +51,33 @@ public class CardSetScript : MonoBehaviour {
 		gunsCard2 = GameObject.Find("Card02guns");
 		gunsCard2.SetActive(false);
 		dropHere = GameObject.Find ("DropHere");
+		if(GameObject.Find("LanguageController").GetComponent<LanguageController>().getLanguage() == LanguageController.Language.CZ){
+			dropHere.GetComponent<tk2dSprite>().SetSprite(Resources.Load("game-cz/game-cz Data/game-cz", typeof(tk2dSpriteCollectionData)) as tk2dSpriteCollectionData,"frame-cz");
+		}
 	} 
 
 	public string getFinalText(){
-		if(!killed && !tookGuns){
-			return "They escaped without guns";
-		}
-		else if(killed){
-			return "They took guns, killed officer and escaped";
+		if(GameObject.Find("LanguageController").GetComponent<LanguageController>().getLanguage() == LanguageController.Language.CZ){
+			if(!killed && !tookGuns){
+				return "They escaped without guns";
+			}
+			else if(killed){
+				return "They took guns, killed officer and escaped";
+			}
+			else {
+				return "They took guns, escaped and officer survived";
+			}
 		}
 		else {
-			return "They took guns, escaped and officer survived";
+			if(!killed && !tookGuns){
+				return "Utekli bez zbraní";
+			}
+			else if(killed){
+				return "Zabili strážníka, vzali zbraně a utekli";
+			}
+			else {
+				return "Vzali zbraně a utekli, strážník přežil";
+			}
 		}
 	}
 

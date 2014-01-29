@@ -19,9 +19,12 @@ public class LanguageController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(language == Language.AUTODETECT){
+			MenuController menuController = GameObject.Find("MenuCotroller").GetComponent<MenuController>();
 			if(globalLanguage == Language.AUTODETECT){
-				globalLanguage = language = (Application.systemLanguage == SystemLanguage.Czech)?
-					Language.CZ:Language.EN;
+				if(Application.systemLanguage == SystemLanguage.Czech)
+					menuController.setCZ();
+				else
+					menuController.setEN();
 			}
 			else {
 				language = globalLanguage;
