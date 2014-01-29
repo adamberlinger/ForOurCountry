@@ -14,6 +14,11 @@ public class MenuController : MonoBehaviour {
 	public GameObject textBigWhite;
 	public GameObject textBigBlack;
 
+	public Sprite spriteBigWhiteEn;
+	public Sprite spriteBigBlackEn;
+	public Sprite spriteBigWhiteCz;
+	public Sprite spriteBigBlackCz;
+
 	public GameObject button;
 	public GameObject buttonWhite;
 	public GameObject buttonBlack;
@@ -73,7 +78,11 @@ public class MenuController : MonoBehaviour {
 				StartCoroutine(FadeOutText (textButtonWhite));
 				StartCoroutine(FadeOutText (textInfoWhite));
 				StartCoroutine(FadeOutSpriteTk2D(turnWhite));
-				StartCoroutine(ChangeText (textButtonWhite, "I understand", 1.5f));
+				if(GameObject.Find ("LanguageController").GetComponent<LanguageController> ().getLanguage () == LanguageController.Language.CZ) {	
+					StartCoroutine(ChangeText (textButtonWhite, "Rozumím", 1.5f));
+				} else {
+					StartCoroutine(ChangeText (textButtonWhite, "I understand", 1.5f));
+				}
 				StartCoroutine(DisableClick (buttonWhite, 3f));
 				StartCoroutine(FadeInText (textButtonWhite, 1.5f));
 				StartCoroutine(FadeInSprite (textBigWhite, 1.5f));
@@ -88,7 +97,11 @@ public class MenuController : MonoBehaviour {
 				StartCoroutine(FadeOutText (textButtonBlack));
 				StartCoroutine(FadeOutText (textInfoBlack));
 				StartCoroutine(FadeOutSpriteTk2D(turnBlack));
-				StartCoroutine(ChangeText (textButtonBlack, "I understand", 1.5f));
+				if(GameObject.Find ("LanguageController").GetComponent<LanguageController> ().getLanguage () == LanguageController.Language.CZ) {	
+					StartCoroutine(ChangeText (textButtonBlack, "Rozumím", 1.5f));
+				} else {
+					StartCoroutine(ChangeText (textButtonBlack, "I understand", 1.5f));
+				}	
 				StartCoroutine(DisableClick (buttonBlack, 3f));
 				StartCoroutine(FadeInText (textButtonBlack, 1.5f));
 				StartCoroutine(FadeInSprite (textBigBlack, 1.5f));
@@ -98,7 +111,11 @@ public class MenuController : MonoBehaviour {
 				c.targetX = 0;
 				ShowText (textButton);
 				ShowText (textInfo);
-				StartCoroutine(ChangeText (textInfo, "Now both of you can look.\n\nDon't talk about your quests and characters!"));
+				if(GameObject.Find ("LanguageController").GetComponent<LanguageController> ().getLanguage () == LanguageController.Language.CZ) {	
+					StartCoroutine(ChangeText (textInfo, "Nyní se můžete oba dívat.\n\nNemluvte o svých úkolech a postavách!"));
+				} else {
+					StartCoroutine(ChangeText (textInfo, "Now both of you can look.\n\nDon't talk about your quests and characters!"));
+				}				
 				StartCoroutine(ChangeText (textButton, "START"));	
 				state = 5;
 				break;
@@ -114,11 +131,34 @@ public class MenuController : MonoBehaviour {
 
 	public void setCZ(){
 		GameObject.Find ("LanguageController").GetComponent<LanguageController>().setLanguage(LanguageController.Language.CZ);
-		//TODO: change menu texts
+
+		introText2.GetComponent<tk2dTextMesh> ().text = "hra pro 2 hráče";
+		textInfo.GetComponent<tk2dTextMesh> ().text = "Vítejte,\nnajděte si protihráče.\n\nOd teď prosím držte tajemství a nemluvte se svým protihráčem.";
+		textButton.GetComponent<tk2dTextMesh> ().text = "OK,\njsme potichu\na chceme začít";
+		textInfoWhite.GetComponent<tk2dTextMesh> ().text = "Výborně.\nBílý hráč začíná.\n\nČerný hráč se nesmí dívat na obrazovku!";
+		textButtonWhite.GetComponent<tk2dTextMesh> ().text = "OK,\nčerný se nedívá";
+		textInfoBlack.GetComponent<tk2dTextMesh> ().text = "Výborně.\nNyní černý hráč.\n\nBílý hráč se nesmí dívat na obrazovku!";
+		textButtonBlack.GetComponent<tk2dTextMesh> ().text = "OK,\nbílý se nedívá";
+		textBigBlack.GetComponent<SpriteRenderer> ().sprite = spriteBigBlackCz;
+		textBigWhite.GetComponent<SpriteRenderer> ().sprite = spriteBigWhiteCz;
+
 	}
 	public void setEN(){
 		GameObject.Find ("LanguageController").GetComponent<LanguageController>().setLanguage(LanguageController.Language.EN);
-		//TODO: change menu texts
+
+		introText2.GetComponent<tk2dTextMesh> ().text = "game for 2 players";
+		textInfo.GetComponent<tk2dTextMesh> ().text = "Welcome,\nfind an opponent to play.\n\nFrom now, please keep secret and don´t talk to your opponent.";
+		textButton.GetComponent<tk2dTextMesh> ().text = "OK,\nwe are quiet\nand want to start";
+		textInfoWhite.GetComponent<tk2dTextMesh> ().text = "Well done.\nWhite player starts.\n\nBlack player, don't look at screen!";
+		textButtonWhite.GetComponent<tk2dTextMesh> ().text = "OK,\nblack is not looking";
+		textInfoBlack.GetComponent<tk2dTextMesh> ().text = "Well done.\nNow black player.\n\nWhite player, don't look at screen!";
+		textButtonBlack.GetComponent<tk2dTextMesh> ().text = "OK,\nwhite is not looking";
+		textBigBlack.GetComponent<SpriteRenderer> ().sprite = spriteBigBlackEn;
+		textBigWhite.GetComponent<SpriteRenderer> ().sprite = spriteBigWhiteEn;
+
+
+
+
 	}
 
 

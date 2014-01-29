@@ -72,6 +72,44 @@ public class FinalController : MonoBehaviour {
 		state = 0;
 		c = cam.GetComponent<CameraController> ();
 
+		//if (true) {
+		if (GameObject.Find ("LanguageController").GetComponent<LanguageController> ().getLanguage () == LanguageController.Language.CZ) {
+
+			question01.GetComponent<tk2dTextMesh>().text = "Myslíš, že jsi se zachoval správně?";
+			question02.GetComponent<tk2dTextMesh>().text = "Byl tvůj protihráč na špatné straně?";
+			question03.GetComponent<tk2dTextMesh>().text = "Byly tvé činy oprávněné?";
+			question11.GetComponent<tk2dTextMesh>().text = "Myslíš, že jsi se zachoval správně?";
+			question12.GetComponent<tk2dTextMesh>().text = "Byl tvůj protihráč na špatné straně?";
+			question13.GetComponent<tk2dTextMesh>().text = "Byly tvé činy oprávněné?";
+			question21.GetComponent<tk2dTextMesh>().text = "Myslíš, že jsi se zachoval správně?";
+			question22.GetComponent<tk2dTextMesh>().text = "Byl tvůj protihráč na špatné straně?";
+			question23.GetComponent<tk2dTextMesh>().text = "Byly tvé činy oprávněné?";
+
+			headline1.GetComponent<tk2dTextMesh>().text = "Černý hráči, odpověz na tyto otázky";
+			headline2.GetComponent<tk2dTextMesh>().text = "Bílý hráči, odpověz na tyto otázky";
+			headline3.GetComponent<tk2dTextMesh>().text = "Nyní můžete mluvit";
+
+			answer01yes.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer02yes.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer03yes.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer11yes.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer12yes.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer13yes.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer21yes.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer22yes.GetComponent<tk2dTextMesh>().text = "ANO";
+			answer23yes.GetComponent<tk2dTextMesh>().text = "ANO";
+
+			answer01no.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "NE";
+			answer02no.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "NE";
+			answer03no.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "NE";
+			answer11no.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "NE";
+			answer12no.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "NE";
+			answer13no.transform.GetChild (0).GetChild (0).gameObject.GetComponent<tk2dTextMesh>().text = "NE";
+			answer21no.GetComponent<tk2dTextMesh>().text = "NE";
+			answer22no.GetComponent<tk2dTextMesh>().text = "NE";
+			answer23no.GetComponent<tk2dTextMesh>().text = "NE";
+		}
+
 		results = new int[4][];
 		results[0] = new int [4];
 		results[1] = new int [4];

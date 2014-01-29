@@ -39,9 +39,9 @@ TextureImporter:
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings:
-  - buildTarget: iPhone
+  - buildTarget: Android
     maxTextureSize: 1024
-    textureFormat: -2
+    textureFormat: -3
     compressionQuality: 50
   spriteSheet:
     sprites: []

@@ -10,12 +10,24 @@ public class EndController : MonoBehaviour {
 
 
 	void Start() {
-		GameObject.Find ("CardSet").transform.Translate(
-			new Vector3(0f,0f,100f));
+
+		//if (true) {
+		if(GameObject.Find ("LanguageController").GetComponent<LanguageController> ().getLanguage () == LanguageController.Language.CZ) {	
+			text1.GetComponent<tk2dTextMesh>().text = "Díky za hru!";
+			text2.GetComponent<tk2dTextMesh>().text = "Hra je inspirována skutečným příběhem skupiny bratrů Mašínů,\nznámou svým ozbrojeným odbojem proti komunistickému režimu\nv Československu v 50. letech.\n\n\"We don't see thing as they are, we see them as we are.\"\n    - Global Game Jam 2014 Theme";
+		} else {
+			text1.GetComponent<tk2dTextMesh>().text = "Thanks for playing!";
+			text2.GetComponent<tk2dTextMesh>().text = "The story is based on actual events of Masin brothers group,\nknown for their armed resistance against the communist regime\nin Czechoslovakia in the 1950s.\n\n\"We don't see thing as they are, we see them as we are.\"\n    - Global Game Jam 2014 Theme";
+		}
+
+
 		StartCoroutine(FadeInText (text1, 0.5f));
 		StartCoroutine(FadeInText (text2, 1f));
 		StartCoroutine(FadeInText (text3, 3f));
 		StartCoroutine(FadeInText (text4, 3f));
+
+		GameObject.Find ("CardSet").transform.Translate(
+			new Vector3(0f,0f,100f));
 	}
 
 	void Restart() {

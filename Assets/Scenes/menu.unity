@@ -1004,6 +1004,10 @@ MonoBehaviour:
   textInfoBlack: {fileID: 1046038532}
   textBigWhite: {fileID: 1138605507}
   textBigBlack: {fileID: 1705613635}
+  spriteBigWhiteEn: {fileID: 21300000, guid: 818667228370cee43bedacd9cbd2ec22, type: 3}
+  spriteBigBlackEn: {fileID: 21300000, guid: 710ad04fcb1f6c6439a3985f5ad36854, type: 3}
+  spriteBigWhiteCz: {fileID: 21300000, guid: 13c91508115a1e5468a6cb9a8ebeb46a, type: 3}
+  spriteBigBlackCz: {fileID: 21300000, guid: 2583f8a6b4aba7949b245e0a97f8a917, type: 3}
   button: {fileID: 1214315497}
   buttonWhite: {fileID: 2112768296}
   buttonBlack: {fileID: 70945234}
