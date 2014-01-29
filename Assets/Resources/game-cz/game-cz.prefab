@@ -58,7 +58,7 @@ MonoBehaviour:
   forceTextureSize: 0
   forcedTextureWidth: 2048
   forcedTextureHeight: 2048
-  textureCompression: 0
+  textureCompression: 2
   atlasWidth: 2048
   atlasHeight: 2048
   forceSquareAtlas: 0
@@ -568,15 +568,14 @@ MonoBehaviour:
   globalTextureRescale: 1
   attachPointTestSprites: []
   pixelPerfectPointSampled: 0
-  filterMode: 1
+  filterMode: 2
   wrapMode: 1
   userDefinedTextureSettings: 0
   mipmapEnabled: 0
   anisoLevel: 1
-  physicsEngine: 0
+  physicsEngine: 1
   physicsDepth: .100000001
   disableTrimming: 0
-  disableRotation: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1

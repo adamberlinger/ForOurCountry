@@ -73,7 +73,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -114,7 +114,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -155,7 +155,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -196,7 +196,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -237,7 +237,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -278,7 +278,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -319,7 +319,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -401,7 +401,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -442,7 +442,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -483,7 +483,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -524,7 +524,7 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
+    physicsEngine: 1
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
@@ -541,8 +541,7 @@ MonoBehaviour:
   textures:
   - {fileID: 2800000, guid: 31e58d5fe0abf6b499879d477fd2fe06, type: 3}
   pngTextures: []
-  materialPngTextureId: 00000000
-  textureFilterMode: 1
+  textureFilterMode: 2
   textureMipMaps: 0
   allowMultipleAtlases: 0
   spriteCollectionGUID: ae5fbaeccb511cc44a72f1bf40967207
@@ -551,7 +550,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 1451900504
+  buildKey: 1917868782
   dataGuid: 91c1ea1cd2700bb4bb1560a22d694193
   managedSpriteCollection: 0
   hasPlatformData: 0
