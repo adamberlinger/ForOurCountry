@@ -6,3 +6,8 @@
 *.unityproj
 *.sln
 Assets/TK2DROOT
+Assets/TK2DROOT.meta
+Assets/Jemast
+Assets/Jemast.meta
+/LocalCache
+LocalCache.meta
