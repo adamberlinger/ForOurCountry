@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994457055a9434b4aa7b65ad37262d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _font: {fileID: 0}
+  _font: {fileID: 11400000, guid: fb1b97eccf6db514999d1605baf017e5, type: 2}
   _text: Button
   _color: {r: 1, g: 1, b: 1, a: 1}
   _color2: {r: 1, g: 1, b: 1, a: 1}
@@ -1573,7 +1573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994457055a9434b4aa7b65ad37262d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _font: {fileID: 0}
+  _font: {fileID: 11400000, guid: fb1b97eccf6db514999d1605baf017e5, type: 2}
   _text: Button
   _color: {r: 1, g: 1, b: 1, a: 1}
   _color2: {r: 1, g: 1, b: 1, a: 1}
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994457055a9434b4aa7b65ad37262d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _font: {fileID: 0}
+  _font: {fileID: 11400000, guid: fb1b97eccf6db514999d1605baf017e5, type: 2}
   _text: Button
   _color: {r: 1, g: 1, b: 1, a: 1}
   _color2: {r: 1, g: 1, b: 1, a: 1}
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994457055a9434b4aa7b65ad37262d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _font: {fileID: 0}
+  _font: {fileID: 11400000, guid: fb1b97eccf6db514999d1605baf017e5, type: 2}
   _text: Button
   _color: {r: 1, g: 1, b: 1, a: 1}
   _color2: {r: 1, g: 1, b: 1, a: 1}
