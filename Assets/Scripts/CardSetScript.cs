@@ -57,7 +57,7 @@ public class CardSetScript : MonoBehaviour {
 	} 
 
 	public string getFinalText(){
-		if(GameObject.Find("LanguageController").GetComponent<LanguageController>().getLanguage() == LanguageController.Language.CZ){
+		if(GameObject.Find("LanguageController").GetComponent<LanguageController>().getLanguage() != LanguageController.Language.CZ){
 			if(!killed && !tookGuns){
 				return "They escaped without guns";
 			}
